@@ -1,5 +1,5 @@
 const state = {
-  count: 30
+  count: 0
 }
 // 改变状态的方法
 const mutations = {

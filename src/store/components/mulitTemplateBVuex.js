@@ -3,10 +3,10 @@ const state = {
 }
 // 改变状态的方法
 const mutations = {
-  add (state) {
+  addB (state) {
     state.count++
   },
-  reduces (state) {
+  reducesB (state) {
     state.count--
   }
 }
