@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <h1>this.$store.state.count:{{ this.$store.state.helloVuex.count }}</h1>
     <h1>this.$store.getters.getCount:{{ this.$store.getters.getCount }}</h1>
-    <h1>doneTodosCount:{{ doneTodosCount }}</h1>
+    <h1>doneTodosCount1:{{ doneTodosCount }}</h1>
     <h1>count:{{ count }}</h1>
     <button @click="$store.commit('add')">$store.commit('add')</button>
     ||<button @click="add">add</button>
