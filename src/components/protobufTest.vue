@@ -30,13 +30,14 @@ export default {
       var message2 = userpro.User.deserializeBinary(bytes)
       console.log(message2) // proto.PersonTree {wrappers_: null, messageId_: undefined, arrayIndexOffset_: -1, array: Array(3), pivot_: 1.7976931348623157e+308, …}
       console.log(message2.getId())
-      let url = 'http://localhost:8080/login'
+      let url = 'http://localhost:8080/protobufdemo/login'
       let options = {
         method: 'GET',
-        headers: { },
+        headers: {'Accept': 'application/x-protobuf', 'Content-Type': 'application/x-protobuf'},
         data: {},
         url
       }
+      axios.defaults.responseType = 'arraybuffer'
       axios(options)
         .then(function (response) {
           console.log('调用接口返回数据')
