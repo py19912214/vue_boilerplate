@@ -4,11 +4,17 @@ import HelloWorld from '@/components/HelloWorld'
 import hello from '@/components/hello'
 import mulitTemplate from '@/components/mulitTemplate'
 import vueComponentHelloWorld from 'vue-component/src/components/HelloWorld'
+import protobufTest from '@/components/protobufTest'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/protobufTest',
+      name: 'protobufTest',
+      component: protobufTest
+    },
     {
       path: '/vueComponentHelloWorld',
       name: 'vueComponentHelloWorld',

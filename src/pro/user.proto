@@ -1,0 +1,13 @@
+// user.proto
+syntax = "proto3";
+package pan;
+option java_package = "com.login.pro";
+option java_outer_classname = "UserProto";
+message User {
+    int64 id = 1;
+    string name = 2;
+    message PhoneNumber {
+        string number = 1;
+    }
+    repeated PhoneNumber phone = 4;
+}
