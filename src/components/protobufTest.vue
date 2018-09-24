@@ -44,7 +44,7 @@ export default {
           console.log(response)
           var message3 = userpro.User.deserializeBinary(response.data)
           console.log('接口数据解析')
-          console.log(message3.getId())
+          console.log(message3.getId() + ':' + message3.getName())
         })
         .catch(function (error) {
           console.log(error)
